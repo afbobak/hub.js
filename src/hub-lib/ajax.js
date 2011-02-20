@@ -9,7 +9,7 @@
 /**
  * A generic Ajax peer for the Hub.
  */
-Hub.peer("lib.ajax", function() {
+Hub.peer("hub.lib.ajax", function() {
 	
 	function newXHR() {
 		try {

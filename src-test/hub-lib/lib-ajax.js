@@ -1,7 +1,7 @@
 /*
  * Test cases for hub-lib/ajax.js
  */
-AsyncTestCase("lib-ajax", {
+AsyncTestCase("hub-lib/ajax", {
 	
 	tearDown: function() {
 		Hub.reset();
@@ -12,7 +12,7 @@ AsyncTestCase("lib-ajax", {
 			var test = pool.add(function(response) {
 				assertEquals(200, response.status);
 			});
-			Hub.publish("lib.ajax", "request", {
+			Hub.publish("hub.lib.ajax", "request", {
 				url: "/heartbeat"
 			}).then(test);
 		});
