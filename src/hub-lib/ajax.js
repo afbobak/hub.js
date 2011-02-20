@@ -35,7 +35,6 @@ Hub.peer("lib.ajax", function() {
 				}
 			};
 			xhr.send(null);
-			return promise;
 		}
 	
 	};
